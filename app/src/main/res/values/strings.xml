@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HotBoxPizza</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="acessar_conta">Acessar conta</string>
+    <string name="verifique_seus_dados">Verifique seus dados</string>
+    <string name="escolha_um_sabor">Escolha um sabor</string>
+    <string name="portuguesa">Portuguesa</string>
+</resources>
