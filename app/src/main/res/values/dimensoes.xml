@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_padding_padrao">18dp</dimen>
+    <dimen name="largura_altura_img_contato">64dp</dimen>
+    <dimen name="texto_padrao">18sp</dimen>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_padding_padrao"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="@dimen/largura_altura_img_contato"
+        android:layout_height="@dimen/largura_altura_img_contato"
+        android:id="@+id/imgPizza"
+        android:src="@drawable/pizzanum01" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNome"
+        android:text="@string/pizza_portuguesa"
+        android:layout_toRightOf="@+id/imgPizza"
+        android:textStyle="bold"
+        style="@style/TextoPizza" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPreco"
+        android:text="@string/r_28_90"
+        android:layout_toRightOf="@+id/imgPizza"
+        style="@style/TextoPizza"
+        android:layout_alignBottom="@id/imgPizza"
+        android:layout_marginBottom="8dp" />
+
+
+</RelativeLayout>
