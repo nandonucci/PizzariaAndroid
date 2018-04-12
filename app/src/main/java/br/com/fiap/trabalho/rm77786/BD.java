@@ -25,8 +25,8 @@ public class BD extends SQLiteOpenHelper {
         //CRIANDO  TABELA DE LOG
         String sql = "CREATE TABLE " + TB_LOG + " (" +
                 "`id`	INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "`descricao`	TEXT" +
-                "`data` INTERGER" +
+                "`descricao` TEXT," +
+                "`data` INTEGER" +
                 ");";
         db.execSQL(sql);
     }

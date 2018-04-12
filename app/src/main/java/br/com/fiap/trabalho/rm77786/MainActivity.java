@@ -7,28 +7,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//
-////        Intent intent = new Intent(this, AcessoActivity.class);
-////        startActivity(intent);
-//
-//    }
-
     ListView lstPizza;
     List<Pizza> pizzas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         lstPizza = findViewById(R.id.lstPizzas);
@@ -39,14 +27,21 @@ public class MainActivity extends AppCompatActivity {
 
         lstPizza.setAdapter(adapter);
 
+        final Intent intent = new Intent(this, ExibirPizzaActivity.class);
+
         lstPizza.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, pizzas.get(i).getIngredAlergia(), Toast.LENGTH_SHORT).show();
+                intent.putExtra("posicao", i);
+                startActivity(intent);
             }
         });
     }
 
-
-
+    //Grava o log da Activity
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GravaLog.gravaLog(this);
+    }
 }

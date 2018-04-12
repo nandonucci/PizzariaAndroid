@@ -29,4 +29,11 @@ public class AcessoActivity extends AppCompatActivity {
         }
 
     }
+
+    //Grava o log da Activity
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GravaLog.gravaLog(this);
+    }
 }

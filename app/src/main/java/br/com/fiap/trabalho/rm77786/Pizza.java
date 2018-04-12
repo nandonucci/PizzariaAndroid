@@ -7,18 +7,19 @@ public class Pizza {
     private int imagem;
     private String ingredientes;
     private String ingredAlergia;
-    private int pontuacao;
-
+    private int calorias;
+    private float pontuacao;
 
     public Pizza() {
     }
 
-    public Pizza(String nome, double preco, int imagem, String ingredientes, String ingredAlergia, int pontuacao) {
+    public Pizza(String nome, double preco, int imagem, String ingredientes, String ingredAlergia, int calorias, float pontuacao) {
         this.nome = nome;
         this.preco = preco;
         this.imagem = imagem;
         this.ingredientes = ingredientes;
         this.ingredAlergia = ingredAlergia;
+        this.calorias = calorias;
         this.pontuacao = pontuacao;
     }
 
@@ -34,7 +35,7 @@ public class Pizza {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
@@ -62,7 +63,15 @@ public class Pizza {
         this.ingredAlergia = ingredAlergia;
     }
 
-    public int getPontuacao() {
+    public int getCalorias() {
+        return calorias;
+    }
+
+    public void setCalorias(int calorias) {
+        this.calorias = calorias;
+    }
+
+    public float getPontuacao() {
         return pontuacao;
     }
 
