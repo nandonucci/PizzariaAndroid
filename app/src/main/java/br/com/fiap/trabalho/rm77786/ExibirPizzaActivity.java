@@ -18,8 +18,8 @@ public class ExibirPizzaActivity extends AppCompatActivity {
         int posicao = intent.getIntExtra("posicao", -1);
         Pizza pizza = ListagemPizzas.pizzasListadas().get(posicao);
 
-        ImageView imgPizza = findViewById(R.id.exibirPizzaGrande);
-        imgPizza.setImageResource(pizza.getImagem());
+//        ImageView imgPizza = findViewById(R.id.exibirPizzaGrande);
+//        imgPizza.setImageResource(pizza.getImagem());
 
         TextView nomePizza = findViewById(R.id.nomePizza);
         nomePizza.setText(pizza.getNome());

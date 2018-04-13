@@ -36,6 +36,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onStart();
         GravaLog.gravaLog(this);
     }
+
 }
 
 

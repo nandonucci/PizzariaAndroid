@@ -13,4 +13,8 @@
         <item name="android:layout_marginLeft">@dimen/margin_padding_padrao</item>
     </style>
 
+    <style name="AppCompat.TelaCheia" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>
