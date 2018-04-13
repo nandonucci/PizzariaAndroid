@@ -27,10 +27,10 @@ public class ConfiguracaoActivity extends AppCompatActivity {
             Toast.makeText(this, R.string.tempo_invalido, Toast.LENGTH_SHORT).show();
 
         } else {
-
             SharedPreferences.Editor editor = getSharedPreferences("userPrefs", MODE_PRIVATE).edit();
             editor.putInt("splTime", tempo);
             editor.apply();
+            Toast.makeText(this, R.string.tempo_alterado, Toast.LENGTH_SHORT).show();
         }
     }
 }

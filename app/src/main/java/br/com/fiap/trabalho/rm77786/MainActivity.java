@@ -3,11 +3,12 @@ package br.com.fiap.trabalho.rm77786;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,15 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        //ActionBar
-//        Toolbar toolbar = findViewById(R.id.tlbMain);
-//        toolbar.setSubtitle(R.string.eu_um_subtitulo);
-//        toolbar.setLogo(R.mipmap.ic_launcher_round);
-//        setSupportActionBar(toolbar);
-//
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         //Listagem das pizzas
         lstPizza = findViewById(R.id.lstPizzas);
@@ -57,5 +49,20 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConfiguracaoActivity.class);
         startActivity(intent);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_config, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.mniConfig){
+            Intent intent = new Intent(MainActivity.this, ConfiguracaoActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PizzariaAndroid.iml" filepath="$PROJECT_DIR$/PizzariaAndroid.iml" />
+      <module fileurl="file://D:\Fernando2TINA\PizzariaAndroid\PizzariaAndroid.iml" filepath="D:\Fernando2TINA\PizzariaAndroid\PizzariaAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Fernando2TINA\PizzariaAndroid\app\app.iml" filepath="D:\Fernando2TINA\PizzariaAndroid\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -13,4 +13,7 @@
     <string name="eu_um_subtitulo">Eu sou um subtitulo</string>
     <string name="gravar">Gravar</string>
     <string name="tempo_invalido">Tempo invalido</string>
+    <string name="informe_seu_tempo">Informe seu tempo</string>
+    <string name="configura_es">Configurações</string>
+    <string name="tempo_alterado">Tempo alterado!</string>
 </resources>

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/preto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--<android.support.v7.widget.Toolbar-->
@@ -11,12 +12,13 @@
         <!--android:background="@color/vermelho"-->
         <!--android:id="@+id/tlbMain"-->
         <!--/>-->
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnTeste"
-        android:text="teste"
-        android:onClick="teste"
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_horizontal"
+        android:layout_gravity="center"
+
         />
 
     <TextView
@@ -25,14 +27,16 @@
         android:id="@+id/tituloPizzas"
         android:text="@string/escolha_uma_pizza"
         android:textAlignment="center"
-        android:textSize="18dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:layout_margin="20dp"
+        android:textColor="@color/branco"
         />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lstPizzas"/>
+        android:id="@+id/lstPizzas"
+        />
 
 
 
