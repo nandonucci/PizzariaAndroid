@@ -5,6 +5,7 @@ public class Pizza {
     private String nome;
     private double preco;
     private int imagem;
+    private int imagemGrande;
     private String ingredientes;
     private String ingredAlergia;
     private int calorias;
@@ -13,10 +14,11 @@ public class Pizza {
     public Pizza() {
     }
 
-    public Pizza(String nome, double preco, int imagem, String ingredientes, String ingredAlergia, int calorias, float pontuacao) {
+    public Pizza(String nome, double preco, int imagem, int imagemGrande, String ingredientes, String ingredAlergia, int calorias, float pontuacao) {
         this.nome = nome;
         this.preco = preco;
         this.imagem = imagem;
+        this.imagemGrande = imagemGrande;
         this.ingredientes = ingredientes;
         this.ingredAlergia = ingredAlergia;
         this.calorias = calorias;
@@ -47,6 +49,14 @@ public class Pizza {
         this.imagem = imagem;
     }
 
+    public int getImagemGrande() {
+        return imagemGrande;
+    }
+
+    public void setImagemGrande(int imagemGrande) {
+        this.imagemGrande = imagemGrande;
+    }
+
     public String getIngredientes() {
         return ingredientes;
     }
@@ -75,7 +85,7 @@ public class Pizza {
         return pontuacao;
     }
 
-    public void setPontuacao(int pontuacao) {
+    public void setPontuacao(float pontuacao) {
         this.pontuacao = pontuacao;
     }
 }

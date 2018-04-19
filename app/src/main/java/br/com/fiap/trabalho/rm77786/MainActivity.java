@@ -37,20 +37,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //Grava o log da Activity
-    @Override
-    protected void onStart() {
-        super.onStart();
-        GravaLog.gravaLog(this);
-    }
-
-    public void teste(View view) {
-
-        Intent intent = new Intent(this, ConfiguracaoActivity.class);
-        startActivity(intent);
-
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_config, menu);
@@ -64,5 +50,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //Grava o log da Activity
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GravaLog.gravaLog(this);
     }
 }
