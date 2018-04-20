@@ -16,4 +16,8 @@
     <string name="informe_seu_tempo">Informe seu tempo</string>
     <string name="configura_es">Configurações</string>
     <string name="tempo_alterado">Tempo alterado!</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="ingredientes_que_podem_ser_al_rgicos">Ingredientes que podem ser alérgicos</string>
+    <string name="avalie">Avalie</string>
+    <string name="config_splash_view">CONFIG. SPLASH VIEW</string>
 </resources>

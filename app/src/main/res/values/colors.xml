@@ -8,5 +8,6 @@
     <color name="vermelho">#ED1C24</color>
     <color name="preto">#000000</color>
     <color name="branco">#ffffff</color>
+    <color name="cinzaescuro">#080808</color>
 
 </resources>

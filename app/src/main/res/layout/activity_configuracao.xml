@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textColor="@color/branco"
-        android:text="CONFIG. SPLASH VIEW"
-        android:padding="20dp"
-        android:textSize="18sp"
+        android:text="@string/config_splash_view"
+        android:padding="@dimen/lyt_titulo_config_splash"
+        android:textSize="@dimen/lyt_titulo_config_txtSize"
         android:textStyle="bold"
         />
 
@@ -23,22 +23,22 @@
         android:layout_height="wrap_content"
         android:hint="@string/informe_seu_tempo"
         android:id="@+id/edtConfigSplash"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="@dimen/lyt_titulo_config_marginHor"
+        android:layout_marginTop="@dimen/lyt_titulo_config_marginTop"
         android:background="@color/branco"
-        android:padding="10dp"
+        android:padding="@dimen/lyt_titulo_config_padding"
         android:textAlignment="center"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="60dp"
+        android:layout_marginHorizontal="@dimen/lyt_btngravar_config_marginHor"
         android:text="@string/gravar"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/lyt_btngravar_config_marginTop"
         android:backgroundTint="@color/vermelho"
         android:textColor="@color/branco"
-        android:padding="10dp"
+        android:padding="@dimen/lyt_btngravar_config_padding"
         android:onClick="btnGravar"
         />
 

@@ -25,7 +25,7 @@ public class ExibirPizzaActivity extends AppCompatActivity {
         nomePizza.setText(pizza.getNome());
 
         TextView precoPizza = findViewById(R.id.precoPizza);
-        precoPizza.setText(String.valueOf(pizza.getPreco()));
+        precoPizza.setText(String.valueOf("R$ " + pizza.getPreco()));
 
         TextView ingredientesPizza = findViewById(R.id.ingredientesPizza);
         ingredientesPizza.setText(pizza.getIngredientes());
@@ -34,7 +34,7 @@ public class ExibirPizzaActivity extends AppCompatActivity {
         alergiaPizza.setText(pizza.getIngredAlergia());
 
         TextView caloriasPizza = findViewById(R.id.caloriasPizza);
-        caloriasPizza.setText(String.valueOf(pizza.getCalorias()));
+        caloriasPizza.setText(String.valueOf(pizza.getCalorias() + " kcal"));
 
         RatingBar pontuacaoPizza = findViewById(R.id.pontuacaoPizza);
         pontuacaoPizza.setMax(5);

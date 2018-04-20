@@ -4,35 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
+    android:background="@color/cinzaescuro"
     android:orientation="vertical">
 
 
     <ImageView
         android:id="@+id/exibirPizzaGrande"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="@dimen/largura_pizza_grande"
         tools:background="" />
 
     <LinearLayout
         android:id="@+id/linearPrecoNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/exibirPizzaGrande">
+        android:layout_below="@+id/exibirPizzaGrande"
+        android:layout_marginTop="@dimen/linear_preconome">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/linear_nomekcal_paddingleft">
 
             <TextView
                 android:id="@+id/nomePizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/lyt_nomepizza_margintop"
                 android:layout_weight="1"
-                android:paddingHorizontal="15dp"
+                android:paddingHorizontal="@dimen/lyt_nomepizza_paddingHor"
                 android:textColor="@color/vermelho"
-                android:textSize="15sp"
+                android:textSize="@dimen/lyt_nomepizza_txtSize"
                 android:textStyle="normal"
                 tools:text="@string/nome_pizza" />
 
@@ -40,9 +44,9 @@
                 android:id="@+id/caloriasPizza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="15dp"
+                android:paddingHorizontal="@dimen/lyt_caloria_paddingHor"
                 android:textAlignment="center"
-                android:textStyle="bold"
+                android:textColor="@color/branco"
                 tools:text="calorias" />
 
         </LinearLayout>
@@ -52,11 +56,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="@dimen/lyt_preco_paddingTop"
             android:textAlignment="center"
             android:textColor="@color/vermelho"
-            android:textSize="40sp"
+            android:textSize="@dimen/lyt_preco_txtSize"
             android:textStyle="bold"
             tools:text="29,90" />
+
 
     </LinearLayout>
 
@@ -68,35 +74,65 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lyt_tituloingredientes_margintBut"
+            android:layout_marginTop="@dimen/lyt_tituloingredientes_margintTop"
+            android:text="@string/ingredientes"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="@dimen/lyt_tituloingredientes_txtSize" />
+
+        <TextView
             android:id="@+id/ingredientesPizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="20dp"
+            android:paddingHorizontal="@dimen/lyt_igredientes_paddingHor"
             android:textAlignment="center"
+            android:textColor="@color/branco"
             android:textStyle="bold"
             tools:text="ingredientes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lyt_tituloigredientesalergia_marginBut"
+            android:layout_marginTop="@dimen/lyt_tituloigredientesalergia_marginTop"
+            android:text="@string/ingredientes_que_podem_ser_al_rgicos"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="@dimen/lyt_tituloigredientesalergia_txtSize" />
 
         <TextView
             android:id="@+id/alergiaPizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:paddingHorizontal="@dimen/lyt_igredientesalergia_paddingHor"
             android:textAlignment="center"
+            android:textColor="@color/branco"
             android:textStyle="bold"
             tools:text="alergia" />
 
     </LinearLayout>
+
 
     <RatingBar
         android:id="@+id/pontuacaoPizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearIngredientes"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
         android:layout_centerHorizontal="true"
-         />
+        android:layout_marginTop="@dimen/lyt_ratingbar_marginTop"
+        android:foregroundGravity="bottom"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lyt_imagemfoto_altura"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/fire_bottom" />
 
 </RelativeLayout>
 

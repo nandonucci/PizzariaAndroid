@@ -17,10 +17,10 @@
         android:layout_height="wrap_content"
         android:hint="@string/usuario"
         android:id="@+id/edtUsuario"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="@dimen/lyt_usuario_marginHor"
+        android:layout_marginTop="@dimen/lyt_usuario_marginTop"
         android:background="@color/branco"
-        android:padding="10dp"
+        android:padding="@dimen/lyt_usuario_padding"
         android:textAlignment="center"
         />
     <EditText
@@ -28,23 +28,23 @@
         android:layout_height="wrap_content"
         android:hint="@string/senha"
         android:id="@+id/edtSenha"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="@dimen/lyt_senha_marginHor"
+        android:layout_marginTop="@dimen/lyt_senha_marginTop"
         android:background="@color/branco"
-        android:padding="10dp"
+        android:padding="@dimen/lyt_senha_padding"
         android:textAlignment="center"
+        android:password="true"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="60dp"
+        android:layout_marginHorizontal="@dimen/lyt_btnacesso_marginHor"
         android:text="@string/acessar_conta"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/lyt_btnacesso_marginTop"
         android:onClick="acessarConta"
         android:backgroundTint="@color/vermelho"
         android:textColor="@color/branco"
-        android:padding="10dp"
+        android:padding="@dimen/lyt_btnacesso_padding"
         />
-
 
 </LinearLayout>
